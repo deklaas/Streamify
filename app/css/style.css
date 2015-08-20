@@ -1,0 +1,96 @@
+body {
+  background: lightgrey;
+  color: #333;
+}
+
+.holder {
+  background-color: white;
+  width: 650px;
+  margin: 0 auto;
+  overflow: auto;
+  background: -webkit-linear-gradient(90deg, #24C6DC 10%, #514A9D 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #24C6DC 10%, #514A9D 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #24C6DC 10%, #514A9D 90%);
+  /* IE10 */
+  background: -o-linear-gradient(90deg, #24C6DC 10%, #514A9D 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(90deg, #24C6DC 10%, #514A9D 90%);
+  /* W3C */
+}
+
+.main {
+  text-align: center;
+  float: left;
+  width: 70%;
+}
+
+.main #holder {
+  margin: 35px auto;
+  background-color: white;
+  border: 2.5px dashed #3498db;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+.main #holder .holder-text {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.main #holder.hover {
+  color: white;
+  border: 2.5px dashed green;
+  background-color: rgba(63, 191, 191, 0.3);
+}
+
+.main #holder.active {
+  color: white;
+  border: 2.5px dashed blue;
+  background-color: rgba(63, 127, 191, 0.3);
+}
+
+#after {
+  display: none;
+}
+
+.settings {
+  color: white;
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  border-left: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.settings .settings-panel {
+  height: 360px;
+  padding-left: 15px;
+}
+
+.settings .settings-panel p {
+  font-size: 15px;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+}
+
+.footer .play-buttons {
+  float: right;
+}
+
+.footer .add-files-button {
+  color: white;
+  float: left;
+}
+
+#error {
+  display: none;
+  color: red;
+}

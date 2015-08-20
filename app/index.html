@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Streamify</title>
+  <link rel="stylesheet" href="./css/topcoat-desktop-light.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="holder">
+    <div class="main">
+      <div id="holder">
+        <div class="holder-text">
+          <div id="before">
+            <h1>Drag and drop</h1>
+            <p>
+              and we do the sciences
+            </p>
+          </div>
+          <div id="after">
+            <h1>Start streaming</h1>
+            <p>
+              We did science
+            </p>
+          </div>
+
+          <div id="error">
+            <h1>First upload files!</h1>
+            <p>
+              Drag 'n' drop them
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings">
+      <form>
+        <div class="settings-panel">
+          <h2>Settings</h2>
+          <p>
+            Server name
+          </p>
+          <input type="text" id="serverName" class="topcoat-text-input--large" value="streamify" placeholder="default: streamify">
+          <br>
+          <p>
+            Server port
+          </p>
+          <input type="text" id="serverPort" class="topcoat-text-input--large" value="1337" placeholder="default: 1337">
+          <br>
+          <br>
+          <label class="topcoat-checkbox">
+            <input type="checkbox" id="cleanFolder">
+            <div class="topcoat-checkbox__checkmark"></div>
+            Remove .txt files
+          </label>
+          <br>
+          <br>
+          <label class="topcoat-checkbox">
+            <input id="dlnaSupport" type="checkbox" checked>
+            <div class="topcoat-checkbox__checkmark"></div>
+            DLNA server
+          </label>
+        </div>
+      </form>
+    </div>
+    <div style="clear: both;"></div>
+
+    <div class="footer">
+      <div class="add-files-button">
+        <input type="file" id="fileLoader" name="files" title="Load File" style="display:none;" />
+        <button class="topcoat-button--large" onclick="openfileDialog();">+ add files</button>
+      </div>
+      <div class="play-buttons">
+        <button class="topcoat-button--large--cta" id="stop" onclick="stopServer()" disabled>Stop</button>
+        <button class=" topcoat-button--large--cta" id="start" onclick="startServer()">Start</button>
+      </div>
+      <div style="clear: both; "></div>
+    </div>
+
+  </div>
+  <script src="./js/main.js"></script>
+  <script src="./js/jquery-1.11.3.min.js"></script>
+</body>
+
+</html>
